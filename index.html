@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070805">
+  <meta name="description" content="Vidrohi Systems — the hands-on defence technology society at BITS Pilani, Hyderabad Campus.">
+  <meta name="author" content="Vidrohi Systems">
+  <meta property="og:title" content="Vidrohi Systems">
+  <meta property="og:description" content="The Society of Defence Technology at BITS Pilani, Hyderabad Campus.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vidrohi Systems">
+  <meta property="og:url" content="__SITE_URL__">
+  <meta property="og:image" content="__SITE_URL__/assets/social-logo.png">
+  <meta property="og:image:secure_url" content="__SITE_URL__/assets/social-logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vidrohi Systems">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vidrohi Systems">
+  <meta name="twitter:description" content="The Society of Defence Technology at BITS Pilani, Hyderabad Campus.">
+  <meta name="twitter:image" content="__SITE_URL__/assets/social-logo.png">
+  <title>Vidrohi Systems | BITS Pilani Hyderabad</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="image_src" href="__SITE_URL__/assets/social-logo.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="systems-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><i></i></div>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__word" aria-label="Vidrohi">
+      <span style="--i:0">V</span><span style="--i:1">I</span><span style="--i:2">D</span><span style="--i:3">R</span><span style="--i:4">O</span><span style="--i:5">H</span><span style="--i:6">I</span>
+    </div>
+    <p>SYSTEMS</p>
+    <div class="loader__line"><i></i></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Vidrohi Systems home">
+      <img src="assets/vidrohi-mark.png" alt="">
+      <span>VIDROHI <b>SYSTEMS</b></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#people">People</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false">
+        <span class="sound-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sound-toggle__label">Sound off</span>
+      </button>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true" aria-label="Pause auto-scroll">
+        <span aria-hidden="true">↓</span>
+        <span class="motion-toggle__label">Pause scroll</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <audio id="soundtrack" loop preload="metadata" src="assets/vidrohi-soundscape.mp3"></audio>
+
+  <main id="main">
+    <section class="hero scene" id="top" data-scene="hero">
+      <div class="hero__orbit" aria-hidden="true">
+        <div class="hero__ring hero__ring--one"></div>
+        <div class="hero__crest"><img src="assets/vidrohi-crest-transparent.png" alt=""></div>
+      </div>
+
+      <div class="hero__content wrap">
+        <p class="eyebrow reveal">DEFENCE / BIOMEDICINE / A.I. / ELECTRONICS</p>
+        <h1 class="hero__title" aria-label="Vidrohi Systems">
+          <span class="title-line title-line--top">VIDROHI</span>
+          <span class="title-line title-line--bottom"><em>SYSTEMS</em></span>
+        </h1>
+        <div class="hero__footer reveal">
+          <p>The Society of Defence Technology<br>at BITS Pilani, Hyderabad Campus.</p>
+          <a class="arrow-link" href="#about">Discover Vidrohi <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section class="manifesto scene" id="about" data-scene="about">
+      <div class="wrap manifesto__grid">
+        <p class="section-name reveal">About Vidrohi</p>
+        <div class="manifesto__copy">
+          <p class="kicker reveal">A society for people who would rather make the future than wait for it.</p>
+          <h2 class="display-copy reveal">Ideas don’t stay <span>ideas</span> here.</h2>
+          <div class="manifesto__body reveal">
+            <p>Vidrohi began with railguns and racing drones built for the Drone Racing League, then expanded into biomedicine, AI, electronics and hardware. Every member can bring an idea; the society provides the tools and mentors to build it.</p>
+            <p>Teams have competed at IIT Bombay, VIT Vellore and BITS Goa, placed first at TechExpo, run an RC-plane workshop, and collaborated with Aeolus on the work that became Apollyon.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proof-rail" aria-label="Vidrohi highlights">
+        <div><strong data-count="190" data-suffix="+">0</strong><span>Indiuno orders<br>on campus</span></div>
+        <div><strong data-count="1" data-prefix="#">0</strong><span>at TechExpo<br>with a cash prize</span></div>
+        <div><strong data-count="3" data-suffix="+">0</strong><span>major techfest<br>campuses</span></div>
+        <div><strong>∞</strong><span>directions<br>to build in</span></div>
+      </div>
+    </section>
+
+    <section class="projects scene" id="projects" data-scene="projects">
+      <div class="projects__head wrap">
+        <p class="section-name reveal">Selected projects</p>
+        <h2 class="display-copy reveal">Built in the lab.<br><span>Tested in public.</span></h2>
+      </div>
+
+      <div class="project-sequence">
+        <div class="project-stage" aria-hidden="true">
+          <div class="project-stage__frame">
+            <img class="project-visual active" data-project-visual="boat" src="assets/rc-boat.png" alt="">
+            <img class="project-visual" data-project-visual="drone" src="assets/racing-drone.png" alt="">
+            <img class="project-visual" data-project-visual="indiuno" src="assets/indiuno.png" alt="">
+            <img class="project-visual project-visual--portrait" data-project-visual="byte" src="assets/byte-robot.jpg" alt="">
+            <img class="project-visual project-visual--portrait" data-project-visual="arm" src="assets/bionic-arm.png" alt="">
+          </div>
+        </div>
+
+        <div class="project-copies">
+          <article class="project-copy active" data-project="boat">
+            <h3>RC Boat</h3>
+            <img class="project-copy__mobile-image" src="assets/rc-boat.png" alt="Hoverboard-inspired RC boat prototype">
+            <p>Built by the 2024 batch for IIT Bombay Techfest. Its hoverboard-inspired form was Vidrohi’s first attempt at a global competition—and the beginning of a much bigger build culture.</p>
+          </article>
+
+          <article class="project-copy" data-project="drone">
+            <h3>Racing Drone</h3>
+            <img class="project-copy__mobile-image" src="assets/racing-drone.png" alt="Vidrohi FPV racing drone">
+            <p>Our first FPV racing drone entered IIT Bombay Techfest against pilots from across the globe. The team also met Halowalker, a world champion from Germany.</p>
+          </article>
+
+          <article class="project-copy" data-project="indiuno">
+            <h3>Indiuno</h3>
+            <img class="project-copy__mobile-image" src="assets/indiuno.png" alt="Indiuno electronics development board">
+            <p>A robust, more capable Arduino alternative built by Jayant Khatri. With 190+ campus orders and use across several Vidrohi projects, Indiuno became the society’s first commercialised product.</p>
+          </article>
+
+          <article class="project-copy" data-project="byte">
+            <h3>Byte</h3>
+            <img class="project-copy__mobile-image" src="assets/byte-robot.jpg" alt="Byte expressive robot prototype">
+            <p>A programmable robotic body that turns its head, shows expressions and connects to different language models. Byte is built around the Indiuno platform.</p>
+          </article>
+
+          <article class="project-copy" data-project="arm">
+            <h3>Bionic Arm</h3>
+            <img class="project-copy__mobile-image" src="assets/bionic-arm.png" alt="Bionic arm prototype">
+            <p>A playful prototype became Vidrohi’s first biomedicine project—and went on to receive support from a professor at IIT Kharagpur.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="field scene" data-scene="field">
+      <div class="wrap field__grid">
+        <div>
+          <p class="section-name reveal">What we teach</p>
+          <h2 class="display-copy reveal">Learn by<br><span>making.</span></h2>
+        </div>
+        <div class="capabilities">
+          <div class="capability reveal"><span>3D modelling</span></div>
+          <div class="capability reveal"><span>PCB design</span></div>
+          <div class="capability reveal"><span>FPV piloting</span></div>
+          <div class="capability reveal"><span>Rapid prototyping</span></div>
+          <div class="capability reveal"><span>AI integration</span></div>
+        </div>
+      </div>
+      <div class="field__marquee" aria-hidden="true"><div>WORKSHOPS · COMPETITIONS · MENTORS · PROTOTYPES · WORKSHOPS · COMPETITIONS · MENTORS · PROTOTYPES · </div></div>
+    </section>
+
+    <section class="apollyon scene" id="apollyon" data-scene="apollyon">
+      <div class="apollyon__image reveal"><img src="assets/apollyon-founders.png" alt="Apollyon Dynamics founders Jayant Khatri and Sourya Choudhury"></div>
+      <div class="apollyon__copy">
+        <p class="section-name reveal">Apollyon Dynamics</p>
+        <h2 class="display-copy reveal">Vidrohi is the<br><span>training ground.</span></h2>
+        <p class="reveal">Vidrohi founders Sourya Choudhury, Jayant Khatri and Abhigyan Srivastava built the workshops and project culture that became Apollyon Dynamics. Today, Apollyon develops indigenous autonomous strike platforms for Indian conditions.</p>
+        <a class="arrow-link reveal" href="https://www.apollyondynamics.com/" target="_blank" rel="noreferrer">Explore Apollyon Dynamics <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="people scene" id="people" data-scene="people">
+      <div class="wrap people__head">
+        <p class="section-name reveal">People</p>
+        <h2 class="display-copy reveal">The hands behind<br><span>the hardware.</span></h2>
+      </div>
+
+      <div class="people-rail" aria-label="Vidrohi Systems leadership">
+        <article class="person reveal">
+          <div class="person__image"><img src="assets/abhishek-s-president.jpeg" alt="Abhishek S"></div>
+          <p>PRESIDENT</p><h3>Abhishek S</h3>
+        </article>
+        <article class="person reveal">
+          <div class="person__image"><img src="assets/akshat-gupta-secretary.jpeg" alt="Akshat Gupta"></div>
+          <p>SECRETARY</p><h3>Akshat Gupta</h3>
+        </article>
+        <article class="person reveal">
+          <div class="person__image"><img src="assets/aishwarya-gupta-joint-secretary.png" alt="Aishwarya Gupta"></div>
+          <p>JOINT SECRETARY</p><h3>Aishwarya Gupta</h3>
+        </article>
+        <article class="person reveal">
+          <div class="person__image"><img src="assets/abhinav-pullela-operations.jpeg" alt="Abhinav Pullela"></div>
+          <p>OPERATIONS HEAD</p><h3>Abhinav Pullela</h3>
+        </article>
+        <article class="person reveal">
+          <div class="person__image"><img src="assets/yarnav-tanwar-technical.jpg" alt="Yarnav Tanwar"></div>
+          <p>TECHNICAL HEAD</p><h3>Yarnav Tanwar</h3>
+        </article>
+      </div>
+
+      <div class="mentors wrap">
+        <p class="mentors__label reveal">MENTORS / FOUNDING BUILDERS</p>
+        <div class="mentors__list">
+          <article class="mentor reveal"><img src="assets/abhigyan-prakash-mentor.jpg" alt="Abhigyan Prakash"><h3>Abhigyan Prakash</h3></article>
+          <article class="mentor reveal"><img src="assets/sourya-choudhury-mentor.jpg" alt="Sourya Choudhury"><h3>Sourya Choudhury</h3></article>
+          <article class="mentor reveal"><img src="assets/jayant-khatri-mentor.jpg" alt="Jayant Khatri"><h3>Jayant Khatri</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="expeditions scene" data-scene="expeditions">
+      <div class="wrap expeditions__head">
+        <p class="section-name reveal">Competitions</p>
+        <h2 class="display-copy reveal">Out of the lab.<br><span>Into the arena.</span></h2>
+        <p class="reveal">Boat racing, FPV, exhibitions and build trips across IIT Bombay, VIT Vellore and BITS Goa.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--wide reveal"><img src="assets/iit-bombay-gallery.jpg" alt="Vidrohi Systems members at IIT Bombay"><figcaption><span>IIT BOMBAY</span><b>TECHFEST FIELD LOG</b></figcaption></figure>
+        <figure class="gallery__item reveal"><img src="assets/vit-vellore-gallery.jpg" alt="Vidrohi Systems members at VIT Vellore"><figcaption><span>VIT VELLORE</span><b>COMPETITION CREW</b></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="contact scene" id="contact" data-scene="contact">
+      <div class="contact__radar" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
+      <div class="wrap contact__content">
+        <h2 class="contact__title reveal">BUILD<br><span>WITH US.</span></h2>
+        <div class="contact__lower">
+          <div class="contact__body">
+            <p class="contact__intro reveal">Join the society, build with us, or start a collaboration. If it can be prototyped, we want to hear about it.</p>
+            <div class="contact__actions reveal">
+              <a class="primary-link" href="https://www.instagram.com/vidrohi_systems/" target="_blank" rel="noreferrer">Message @vidrohi_systems <span>↗</span></a>
+              <a class="text-link" href="https://www.linkedin.com/company/vidrohi-systems" target="_blank" rel="noreferrer">Find us on LinkedIn ↗</a>
+            </div>
+          </div>
+          <div class="contact__qrs reveal">
+            <figure>
+              <img src="assets/whatsapp-inductions.png" alt="QR code for Vidrohi Systems 2026 inductions WhatsApp group">
+              <figcaption>2026 INDUCTIONS · WHATSAPP</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/instagram-qr.png" alt="QR code for Vidrohi Systems on Instagram">
+              <figcaption>@VIDROHI_SYSTEMS · INSTAGRAM</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer wrap">
+        <span>VIDROHI SYSTEMS © 2026</span>
+        <span>BITS PILANI · HYDERABAD CAMPUS</span>
+        <a href="#top">RETURN TO ORIGIN ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
